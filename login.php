@@ -1,9 +1,13 @@
 <?php
+$servername = "Server: 127.0.0.1";
+$database = "db_login";
+$username = "root";
+$password = "";
 // database connection code
 if(isset($_POST['txtUserName']))
-{
-// Connecting to mysqli_connect ('localhost', 'database_user', 'database_password','database');
-$con = mysqli_connect('localhost', 'root', '', 'db_login');
+
+// Connecting using mysqli_connect ('localhost', 'database_user', 'database_password','database');
+$conn = mysqli_connect('Server: 127.0.0.1', 'root', '', 'db_login');
 
 // get the post records
 
@@ -21,10 +25,11 @@ if($rs)
 {
 	echo "Log in success";
 }
-}
+
 else
 {
 	echo "Email/Password does not exist. Click on Register";
 	
 }
+mysqli_close($conn);
 ?>

@@ -17,26 +17,28 @@
         <p>
             <label for="UserName"> User Name </label>
             <input type="text" class="form-control" name="txtUserName" id="txtUserName" placeholder="Name" value="" required>
-            <div class="invalid-feedback"> Valid User name is required. </div>
+            <!--div-- class="invalid-feedback"> Valid User name is required. </!--div-->
         </p>
 
         <p>
             <label for="email"> Email</label>
             <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" value="" required>
-            <div class="invalid-feedback"> Valid email is required. </div>
+            <!--div class="invalid-feedback"> Valid email is required. </-div-->
         </p>
 
         <p>
             <label for="Password">Password</label>
             <input type="text"  class="form-control" name="txtPassword" id="txtPassword" placeholder="Password" value="" required>
-            <div class="invalid-feedback"> Valid Password is required. </div>
+            <!--div class="invalid-feedback"> Valid Password is required. </!--div-->
         </p>
 
         <p>&nbsp;</p>
 
         <p>
-            <input type="Submit" name="Submit" id="Submit" value="Log In"  class="btn btn-primary btn-lg btn-block">
-            <input type="submit" name="Submit" id="Submit" value="Register"  class="btn btn-primary btn-lg btn-block">
+            <form action="index.html"> 
+                <input type="submit" name="Submit" id="Submit" value="Log In"  class="btn btn-primary btn-lg btn-block">
+                <input type="submit" name="Submit" id="Submit" value="Register"  class="btn btn-primary btn-lg btn-block">
+            </form>
         </p>
         </form>
 </fieldset>
