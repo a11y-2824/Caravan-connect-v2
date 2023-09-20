@@ -1,0 +1,22 @@
+
+--
+-- Database: `db_login`
+--
+
+CREATE DATABASE IF NOT EXISTS `db_login` 
+DEFAULT CHARACTER SET latin1 
+COLLATE latin1_swedish_ci;
+USE `db_login`;
+
+-- Table structure for table `tbl_login_details`
+--
+
+DROP TABLE IF EXISTS `tbl_login_details`;
+CREATE TABLE `tbl_login_details` (
+  `fldUserName` varchar(50) NOT NULL,
+  `fldEmail` varchar(50) NOT NULL,
+  `fldPassword` varchar(15) NOT NULL,
+
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+

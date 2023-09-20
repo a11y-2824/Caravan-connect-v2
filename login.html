@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset=utf-8>
+
+<title>Log In</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="login">
+        <img class="caravan connect" src="images/carpool.jpg" alt="" width="150" height="140">
+        <h2>Log In</h2>
+<fieldset>
+        <form name="frmLogin" class="needs-validation " method="post" action="login.php">
+        <p>
+            <label for="UserName"> User Name </label>
+            <input type="text" class="form-control" name="txtUserName" id="txtUserName" placeholder="Name" value="" required>
+            <div class="invalid-feedback"> Valid User name is required. </div>
+        </p>
+
+        <p>
+            <label for="email"> Email</label>
+            <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" value="" required>
+            <div class="invalid-feedback"> Valid email is required. </div>
+        </p>
+
+        <p>
+            <label for="Password">Password</label>
+            <input type="text"  class="form-control" name="txtPassword" id="txtPassword" placeholder="Password" value="" required>
+            <div class="invalid-feedback"> Valid Password is required. </div>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>
+            <input type="Submit" name="Submit" id="Submit" value="Log In"  class="btn btn-primary btn-lg btn-block">
+            <input type="submit" name="Submit" id="Submit" value="Register"  class="btn btn-primary btn-lg btn-block">
+        </p>
+        </form>
+</fieldset>
+
+</div>
+
+<script src=" " integrity=" "crossorigin=""></script>
+</body>
+</html>
